@@ -1,0 +1,15 @@
+*  linked list types
+ * 1- single linked list (next) -> last data's next is null
+ * 2- double linked list (next + prev) -> last data's and head's prev is null
+ * 3- circlar linked list (next) -> last sata's next is head.
+ 
+
+* linked list operations
+ * 1- creating a list
+ * 2- inserting elements into list (front,end,inside)
+ * 3- deleting an element
+ * 4- searching
+ * 5- counting
+ * 6- printing
+ * 7- sorting
+ 
