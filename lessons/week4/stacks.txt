@@ -1,0 +1,51 @@
+last in first out (lifo)
+A stack is a container of object that are inserted and removed according to the last in first out principle.
+
+push(): add items to the top.
+pop() : removes the item from the top
+
+Real life applications:
+pile of dinner plates.
+magazine (bullet)
+
+Implementation of stacks:
+1- Linked list implementation
+#define STACK-SIZE
+
+typedef struct node
+{
+    int cnt;
+    struct node *top;
+} stack;
+
+
+Operations
+a) Initialization 
+b) Push
+c) Pop
+
+
+2- Array Implementation
+#define STACKSIZE 10
+
+typedef struct
+{
+    int top;
+    int data[STACKSIZE];
+} stack;
+
+Operations
+a) Resetting
+b) Push
+c) Pop
+
+Applications of stacks in computers
+*recursive functions
+*infix, prefix, postfix
+*operators -> +-/*^
+*operands -> A,B,C etc
+
+Infix           Prefix          Postfix
+A+B-C           -+ABC           AB+C-
+A-B/(B*D^E)     -A/B*C^DE       ABCDE^*/-
+
