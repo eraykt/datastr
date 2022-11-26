@@ -47,5 +47,5 @@ Applications of stacks in computers
 
 Infix           Prefix          Postfix
 A+B-C           -+ABC           AB+C-
-A-B/(B*D^E)     -A/B*C^DE       ABCDE^*/-
+A-B/(C*D^E)     -A/B*C^DE       ABCDE^*/-
 

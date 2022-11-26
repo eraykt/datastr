@@ -14,7 +14,7 @@ node *destroyRecursive(node *head)
     if (head == NULL)
         return NULL;
 
-    return destroyRecursive(head->next);
+    destroyRecursive(head->next);
     free(head);
 }
 

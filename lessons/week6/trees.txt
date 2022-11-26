@@ -1,0 +1,47 @@
+A graph consist of a self of nodes and a set of edges connecting pour of nodes.
+A tree has the propert that there is exactly one path (no more no less) between each pair of nodes.
+
+A tree is a graph with no cycle.
+
+Rooted Tree
+In a rooted tree, one distinguished node is called the root.
+
+Every node except the root has excatly one parent p, which is the first node after c on the path from c to the root.
+(c den root a olan ilk düğüm parent'tır.)
+
+A leaf is a node with no children.
+Siblings are node with the same parent.
+The ancestors of a node d are the nodes on the path from d to the root.
+(ancestor ata demek. roota giden yoldaki her düğüm.)
+If node a is an ancestor of node d, then d is descendent of a.
+(descendent sonraki nesil anlamına geliyor. ancestor'un tam tersi.)
+
+The length of a path is the number of edges on the path.
+The depth of a node n is the length of the path from n to the root.
+The depth of the root is zero.
+
+The height of a node n is the length of the path from n to its deepest descendent.
+
+depth -> aşağıdan yukarıya ne kadar yükseğim? roota kadar sayılacak.
+height -> yukarıdan aşağıya ne kadar alçağım? en aşağıdaki descendent a kadar say.
+
+The subtree rooted of node n is the tree formed by n and its descendent.
+
+Binary tree
+A binary tree is a tree in which no node has more than two children.
+                    o
+                o       o
+              o        o   o
+            o
+              o     
+
+And every child is either a left child or a right child even if it is the only child.
+
+Tree Traversal
+A manner of visiting each node once.
+preorder traversal -> root left right
+inorder traversal -> left root right
+postorder traversal -> left right root 
+
+Binary search tree
+Each right node is greater than its parent. Each left node is less than its parent.
