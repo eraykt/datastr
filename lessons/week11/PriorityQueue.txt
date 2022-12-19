@@ -1,0 +1,36 @@
+* A kind of queue
+*dequeue gets the element with the highest priority
+*Priority is based on compasable value (key) of each object
+
+Applications in Computers
+OS: run(dequeue) the shortest job first
+Printer: print(dequeue) the shortest document.
+
+Minimum Priority Queue
+We yse a data structure called heap to implement a priority queue.
+
+A Binary Heap --- Structurel property
+Completely filled
+Bottom level is filled from left to right
+
+Heap Order Property
+Any node is smaller than or equal to all of its childern.
+
+parent(i) = floor(i/2);
+left(i) = 2*i;
+right(i) = 2*i +1;
+
+3 ary tree heap
+parent(i) = floor((i+1)/3);
+left(i) = 3*i -1;
+middle(i) = 3*i;
+right(i)= 3*i+ 1
+
+Insert or enqueue
+1- Insert into the next avaliable location.
+2- Move it up (swap with its parent) until there is no violation for heap order property. This procedure is called Percolate Up.
+
+Delete or dequeue
+1- Keep the min, move the last element in the heap to the first place.
+2- Move the first element dawn until there is no violation for heap order property. this process is called percolate down,
+finally, we return the min which is stored.
