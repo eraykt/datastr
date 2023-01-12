@@ -1,0 +1,32 @@
+AVL trees are balanced on AVL tree is a BST such that for every internal node v
+of the tree, the heights of the children of v can differ by at most one.
+
+|height left children - heights of right children| <= 1
+
+
+bütün node ların sağını ve solunu kontrol ediyoruz. 1 çocuğu olan node un diğer node u -1 olarak alınır. eğer root dahil 
+bütün node ların yükseklik farkı 1 den küçük eşitse avl tree oluyor.
+
+Proposition: The height of an AVL tree with n node is O(lgn)          -> log2n
+
+Question: What is the possible maximum height of BST with n nodes     -> hmax = n-1
+
+Question: Wwhat is the possible minimum height of a BST with n nodes  -> hmin = lg(n+1)-1 -> O(lgn)
+
+
+let n= 1 million for AVL tree. h=(lg2^20) => h=20. iters = 20.
+
+
+
+Rotations
+violation bulunduktan sonra single rotation ya da double rotation kullanılarak avl ye çeviriyoruz.
+
+Insertion
+Inserting a node into an AVL tree changes the height of some of nodes in the tree.
+If insortion causes tree to become unbalanced we travel up the tree from the newly created node until we find the first node x such that its
+grandparent z is unbalanced. Let y be the parent of node x.
+
+
+
+
+zigzig -> violation z 

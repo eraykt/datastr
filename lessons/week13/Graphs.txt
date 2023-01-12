@@ -1,0 +1,32 @@
+A graph G is a set V of vertices and a set E of edges that connect vertices.
+
+G = (V,E)   T = (V,E')
+
+2 types: directed(digraph) & undirected
+
+Path: sequence of vertices with each adjacent pair connected by and edge.
+G1 = 1-4-2-5
+G2 = 1-2-4-3
+
+Lenght of path: #edges on the path. <1,4,2,5> = 3
+Degree of a vertex: #edges incident in vertex.
+
+Digraph
+    indegree : #edges directed toward vertex.
+    outdegree: #edges directed away.
+
+Graph Representations
+1. Adjacency Matrix: |V| by |V| array of booleans.      dense graph
+
+        1           , if (i,j) element of E
+a ij=   0           , otherwise
+
+#Maximum possible edges
+    undirected graph: (|V|.|V-1|) / 2
+    directed graph  : |V|.|V-1|
+
+#Minimum possible edge |V-1|
+
+2. Adjacency List: Each vertex v has a linked list of edges incident (out for digraphs)     sparse graph
+Memory used O(|V| + |E|)
+    
