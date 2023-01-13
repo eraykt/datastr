@@ -40,7 +40,7 @@ void print(list *heads[])
 
         iter = heads[i]->next;
 
-        while (iter->next != NULL)
+        while (iter != NULL)
         {
             printf("%d ", iter->data);
             iter = iter->next;
